@@ -1,0 +1,65 @@
+@use "../../sass/" as *;
+@import "../../sass/responsive";
+
+.about {
+  margin-top: 295px;
+  position: relative;
+  @include maxWidth(70%);
+  @include lg-down {
+    @include maxWidth(90%);
+  }
+
+  @include sm-down {
+    margin-top: 200px;
+  }
+  &_spotlight1 {
+    position: absolute;
+    width: 200px;
+    height: 438px;
+    top: -20%;
+    right: -15%;
+    background: #7aebfb;
+    filter: blur(190px);
+  }
+
+  &_spotlight2 {
+    position: absolute;
+    width: 404px;
+    height: 800px;
+    left: 5%;
+    top: 5%;
+    background: rgba(149, 66, 232, 0.35);
+    filter: blur(175px);
+    transform: rotate(-114.2deg);
+  }
+  &_container {
+    text-align: center;
+    h3 {
+      @include subTitle;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 52px;
+      color: rgba(199, 199, 199, 1);
+
+  
+      @include sm-down {
+        font-size: 24px;
+      }
+
+      span {
+        color: #fff;
+        font-weight: 700;
+      }
+
+      &:nth-child(3) {
+        display: grid;
+        place-items: center;
+        margin-top: 2rem;
+        color: #fff;
+      }
+    }
+  }
+}

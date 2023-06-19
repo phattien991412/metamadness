@@ -1,0 +1,220 @@
+@use "../../sass/" as *;
+@import "../../sass/responsive";
+
+.insight {
+  margin-top: 200px;
+  position: relative;
+
+  @include maxWidth(70%);
+  @include lg-down {
+    @include maxWidth(90%);
+  }
+  &_spotlight {
+    position: absolute;
+    width: 304px;
+    height: 100vh;
+    left: 30%;
+    top: 20%;
+    background: rgba(45, 72, 152, 0.75);
+    filter: blur(200px);
+    transform: rotate(-53.13deg);
+    z-index: -1;
+  }
+  &_container {
+    h3 {
+      text-align: center;
+      @include subTitle;
+    }
+    h1 {
+      text-align: center;
+      @include title;
+
+      @include lg-down {
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+
+    &_list {
+      margin-top: 5rem;
+      &_item {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 0;
+
+        @include lg-down {
+          display: block;
+        }
+        &_img {
+          width: 300px;
+          height: 300px;
+          @include lg-down {
+            width: 100%;
+          }
+          img {
+            object-fit: cover;
+            border-radius: 16px;
+          }
+        }
+
+        &_text {
+          width: 70%;
+          @include lg-down {
+            width: 100%;
+          }
+          h2 {
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 52px;
+            letter-spacing: -0.02em;
+
+            @include lg-down {
+              font-size: 36px;
+              line-height: 48px;
+              padding: 1rem 0;
+            }
+
+            @include sm-down {
+              font-size: 32px;
+              line-height: 48px;
+              padding: 1rem 0;
+            }
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 40px;
+            letter-spacing: 0.005em;
+          }
+        }
+
+        &_icon {
+          font-size: 48px;
+          height: 96px;
+          width: 96px;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          padding: 16px;
+          display: grid;
+          place-items: center;
+
+          @include lg-down {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &_content {
+      margin-top: 200px;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      height: 70vh;
+      @include lg-down {
+        display: block;
+      }
+      &_left {
+        width: 30%;
+        border: 1px solid #6a6a6a;
+        border-radius: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+
+        @include lg-down {
+          width: 100%;
+          margin-bottom: 3rem;
+        }
+
+        @include md-down {
+          height: auto;
+        }
+
+        &_spotlight {
+          position: absolute;
+          width: 200px;
+          height: 316px;
+          left: 0;
+          top: 0;
+          background: #8d39a3;
+          filter: blur(175px);
+        }
+        &_stamp {
+          position: absolute;
+          width: 170px;
+          height: 170px;
+          top: 5%;
+          right: -25%;
+
+          animation: spins 8s linear infinite;
+
+          @keyframes spins {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+
+          @include lg-down {
+            top: 65%;
+            right: 5%;
+            width: 200px;
+            height: 200px;
+          }
+
+          @include md-down {
+            display: none;
+          }
+        }
+        &_detail {
+          height: 85%;
+          padding: 2rem;
+          @include lg-down {
+            width: 100%;
+          }
+          h2 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+          }
+          h4 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: -0.02em;
+            padding-bottom: 2rem;
+          }
+          q {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 46px;
+            letter-spacing: -0.02em;
+
+            @include md-down {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      &_right {
+        width: 70%;
+        height: 100%;
+        @include lg-down {
+          width: 100%;
+        }
+        img {
+          border-radius: 16px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

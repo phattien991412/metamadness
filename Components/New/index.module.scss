@@ -1,0 +1,80 @@
+@use "../../sass/" as *;
+@import "../../sass/responsive";
+
+.new {
+  margin-top: 200px;
+  @include maxWidth(70%);
+
+  @include lg-down {
+    margin-top: 100px;
+    @include maxWidth(90%);
+  }
+  &_container {
+    @include gridPropertiesCol(2);
+    align-items: center;
+    position: relative;
+    @include lg-down {
+      display: block;
+    }
+    &_left {
+      max-width: 90%;
+      @include lg-down {
+        max-width: 100%;
+      }
+      h3 {
+        @include subTitle;
+      }
+      h1 {
+        @include title;
+
+        @include sm-down {
+          font-size: 36px;
+          line-height: 48px;
+        }
+      }
+
+      &_list {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        // max-width: 85%;
+        &_item {
+          p {
+            &:nth-child(1) {
+              background: rgba(255, 255, 255, 0.08);
+              backdrop-filter: blur(24px);
+              border-radius: 16px;
+              width: fit-content;
+              padding: 16px;
+              font-size: 28px;
+              height: 56px;
+              margin: 1.5rem 0;
+            }
+
+            &:nth-child(2) {
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 30px;
+            }
+
+            &:nth-child(3) {
+              padding-top: 1rem;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 32px;
+              color: #b0b0b0;
+            }
+          }
+        }
+      }
+    }
+
+    &_right {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@use "../../sass/" as *;
+@import "../../sass/responsive";
+
+.footer {
+  margin-top: 200px;
+  @include maxWidth(70%);
+  @include lg-down {
+    @include maxWidth(90%);
+    margin-top: 500px;
+  }
+  &_container {
+    &_join {
+      @include flexProperties(center, space-between);
+      border-bottom: 1px solid #ffffff37;
+      padding-bottom: 2rem;
+
+      @include sm-down {
+        display: block;
+      }
+      h1 {
+        @include title;
+        @include lg-down {
+          font-size: 36px;
+          line-height: 48px;
+          padding-right: 1rem;
+        }
+
+        @include sm-down {
+          // max-width: 70%;
+          margin-bottom: 1rem;
+        }
+      }
+
+      button {
+        background: #25618b;
+        border-radius: 32px;
+        @include flexProperties(center, space-between);
+        gap: 1rem;
+        padding: 8px 16px;
+        color: #fff;
+        font-size: 24px;
+        border: none;
+
+        @include sm-down {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &_info {
+      @include flexProperties(center, space-between);
+      padding: 2rem 0;
+      position: relative;
+      @include lg-down {
+        display: block;
+        text-align: center;
+      }
+
+      @include sm-down {
+        text-align: left;
+      }
+      h3 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.005em;
+        color: rgba(255, 255, 255, 0.7);
+        opacity: 0.8;
+        @include lg-down {
+          padding: 2rem 0;
+        }
+        @include sm-down {
+          text-align: left;
+        }
+      }
+      ul {
+        @include flexProperties(center, center);
+        gap: 2rem;
+        @include sm-down {
+          justify-content: flex-start;
+        }
+
+        li {
+          font-size: 24px;
+
+          &:nth-child(3) {
+            font-size: 28px;
+          }
+        }
+      }
+
+      &_spotlight {
+        position: absolute;
+        width: 500px;
+        height: 100px;
+        left: 37%;
+        bottom: 0;
+        background: #65c4fa;
+        filter: blur(150px);
+      }
+    }
+  }
+}

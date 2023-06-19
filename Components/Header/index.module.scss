@@ -1,0 +1,39 @@
+@use "../../sass/" as *;
+@import "../../sass/responsive";
+
+.header {
+  @include maxWidth(70%);
+  @include lg-down {
+    @include maxWidth(90%);
+  }
+
+  &_container {
+    @include flexProperties(center, space-between);
+    position: relative;
+    height: 10vh;
+
+    p {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &_bg {
+      position: absolute;
+      inset: -150% 0 0 -30%;
+      max-width: 1280px;
+      height: 200px;
+      background-image: linear-gradient(
+        270deg,
+        #d123e1,
+        #d18aea 26%,
+        #d0c2f4 39%,
+        #ceecfd 50%,
+        #a9c8f4 61%,
+        #7b9eea 74%,
+        #2362e1
+      );
+      filter: blur(145px);
+    }
+  }
+}
