@@ -112,12 +112,12 @@
       display: flex;
       align-items: center;
       gap: 2rem;
-      height: 70vh;
+      height: auto;
       @include lg-down {
         display: block;
       }
       &_left {
-        width: 30%;
+        width: 40%;
         border: 1px solid #6a6a6a;
         border-radius: 16px;
         height: 100%;
@@ -173,7 +173,7 @@
           }
         }
         &_detail {
-          height: 85%;
+          height: auto;
           padding: 2rem;
           @include lg-down {
             width: 100%;
@@ -193,7 +193,7 @@
           }
           q {
             font-weight: 400;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 46px;
             letter-spacing: -0.02em;
 
