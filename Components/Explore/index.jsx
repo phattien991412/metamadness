@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Style from "./index.module.scss";
-import world1 from "../../public/img/planet-01.png";
-import world2 from "../../public/img/planet-02.png";
-import world3 from "../../public/img/planet-03.png";
-import world4 from "../../public/img/planet-04.png";
-import world5 from "../../public/img/planet-05.png";
+import world1 from "../../public/img/planet-01.webp";
+import world2 from "../../public/img/planet-02.webp";
+import world3 from "../../public/img/planet-03.webp";
+import world4 from "../../public/img/planet-04.webp";
+import world5 from "../../public/img/planet-05.webp";
 import { BsHeadsetVr } from "react-icons/bs";
 import { fadeIn, staggerContainer, textVariant2 } from "@/utils/motion";
 import { TypingText } from "@/modules/CustomText";

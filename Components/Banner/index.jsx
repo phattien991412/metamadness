@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import stamp from "../../public/img/stamp.png";
+import stamp from "../../public/img/stamp.webp";
 
 import { slideIn, staggerContainer, textVariant } from "@/utils/motion";
 

@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Style from "./index.module.scss";
-import world6 from "../../public/img/planet-06.png";
-import world7 from "../../public/img/planet-07.png";
-import world8 from "../../public/img/planet-08.png";
-import world9 from "../../public/img/planet-09.png";
-import stamp from "../../public/img/stamp.png";
+import world6 from "../../public/img/planet-06.webp";
+import world7 from "../../public/img/planet-07.webp";
+import world8 from "../../public/img/planet-08.webp";
+import world9 from "../../public/img/planet-09.webp";
+import stamp from "../../public/img/stamp.webp";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { fadeIn, staggerContainer, textVariant2, zoomIn } from "@/utils/motion";
 import { TypingText } from "@/modules/CustomText";

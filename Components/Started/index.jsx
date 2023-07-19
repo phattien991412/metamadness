@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Style from "./index.module.scss";
-import startedImg from "../../public/img/get-started.png";
+import startedImg from "../../public/img/get-started.webp";
 import { TypingText } from "@/modules/CustomText";
 import { fadeIn, textVariant2 } from "@/utils/motion";
 import { planetVariants } from "@/utils/motion";

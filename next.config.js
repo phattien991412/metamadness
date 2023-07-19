@@ -5,13 +5,17 @@ const nextConfig = {
   // withOptimizedImages: {
   //   optimizeImages : true,
   //   optimizeImagesInDev: true,
-  //   handleImages: [/.*\.jpg$/, /.*\.png$/],
+  //   handleImages: [/.*\.jpg$/, /.*\.webp$/],
   //   imagesFolder: '/public/images',
   // },
   images: {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],
   },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en"
+  }
 }
 
 module.exports = nextConfig

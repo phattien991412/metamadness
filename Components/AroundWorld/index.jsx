@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import worldMap from "../../public/img/map.png";
-import people1 from "../../public/img/people-01.png";
-import people2 from "../../public/img/people-02.png";
-import people3 from "../../public/img/people-03.png";
+import worldMap from "../../public/img/map.webp";
+import people1 from "../../public/img/people-01.webp";
+import people2 from "../../public/img/people-02.webp";
+import people3 from "../../public/img/people-03.webp";
 
 import { TypingText } from "@/modules/CustomText";
 import { fadeIn, staggerContainer, textVariant2 } from "@/utils/motion";

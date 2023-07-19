@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Style from "./index.module.scss";
-import newImg from "../../public/img/whats-new.png";
+import newImg from "../../public/img/whats-new.webp";
 import { BsHeadsetVr, BsImage } from "react-icons/bs";
 import {
   fadeIn,
