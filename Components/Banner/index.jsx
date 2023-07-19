@@ -1,9 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Style from "./index.module.scss";
+
 import stamp from "../../public/img/stamp.png";
+
 import { slideIn, staggerContainer, textVariant } from "@/utils/motion";
-import Image from "next/image";
+
+import Style from "./index.module.scss";
+import BlurredImage from "../CustomComponent/BlurredImage";
+
 const Banner = () => {
   return (
     <section>
@@ -22,7 +26,7 @@ const Banner = () => {
           className={Style.banner_bg}
         >
           <div className={Style.banner_bg_stamp}>
-            <Image src={stamp.src} alt="stamp" width={170} height={170} />
+            <BlurredImage src={stamp.src} alt="stamp" width={170} height={170} />
           </div>
         </motion.div>
       </motion.div>

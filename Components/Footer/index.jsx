@@ -1,9 +1,14 @@
 import React from "react";
+
 import { motion } from "framer-motion";
-import Style from "./index.module.scss";
-import { BsFacebook, BsHeadsetVr, BsLinkedin, BsTwitter } from "react-icons/bs";
+
 import { AiFillInstagram } from "react-icons/ai";
+import { BsFacebook, BsHeadsetVr, BsLinkedin, BsTwitter } from "react-icons/bs";
+
 import { footerVariants } from "@/utils/motion";
+
+import Style from "./index.module.scss";
+
 const Footer = () => {
   return (
     <motion.div

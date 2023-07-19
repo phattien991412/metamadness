@@ -1,9 +1,13 @@
 import React from "react";
-import { motion, stagger } from "framer-motion";
-import Style from "./index.module.scss";
+
+import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
-import { fadeIn, staggerContainer, textVariant2 } from "@/utils/motion";
+
+import { fadeIn } from "@/utils/motion";
 import { TypingText } from "@/modules/CustomText";
+
+import Style from "./index.module.scss";
+
 const About = () => {
   return (
     <div className={Style.about}>

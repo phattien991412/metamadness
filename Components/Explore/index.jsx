@@ -10,6 +10,7 @@ import { BsHeadsetVr } from "react-icons/bs";
 import { fadeIn, staggerContainer, textVariant2 } from "@/utils/motion";
 import { TypingText } from "@/modules/CustomText";
 import Image from "next/image";
+import BlurredImage from "../CustomComponent/BlurredImage";
 
 const Explore = () => {
   const [toggle, setToggle] = useState(1);
@@ -71,7 +72,7 @@ const Explore = () => {
               } `}
               onClick={(e) => setToggle(i)}
             >
-              <Image src={item.img} alt="world" width={10000} height={700} />
+              <BlurredImage src={item.img} alt="world" width={300} height={700} />
               <div className={Style.world_container_list_item_detail}>
                 <p>
                   <span>{item.icon}</span>

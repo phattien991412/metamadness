@@ -1,13 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Style from "./index.module.scss";
+
 import worldMap from "../../public/img/map.png";
 import people1 from "../../public/img/people-01.png";
 import people2 from "../../public/img/people-02.png";
 import people3 from "../../public/img/people-03.png";
+
 import { TypingText } from "@/modules/CustomText";
 import { fadeIn, staggerContainer, textVariant2 } from "@/utils/motion";
-import Image from "next/image";
+
+import Style from "./index.module.scss";
+import BlurredImage from "../CustomComponent/BlurredImage";
 
 const AroundWorld = () => {
   const people = [
@@ -39,7 +42,7 @@ const AroundWorld = () => {
           world
         </motion.h1>
         <div className={Style.around_container_detail}>
-          <Image
+          <BlurredImage
             src={worldMap.src}
             alt="the world map"
             width={500}
@@ -50,7 +53,7 @@ const AroundWorld = () => {
               className={Style.around_container_detail_people}
               variants={fadeIn("up", "spring", i * 0.75, 1)}
             >
-              <Image src={item.img} alt="people" width={90} height={90} />
+              <BlurredImage src={item.img} alt="people" width={90} height={90} />
             </motion.div>
           ))}
         </div>

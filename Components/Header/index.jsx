@@ -1,8 +1,11 @@
 import React from "react";
+
 import { motion } from "framer-motion";
-import Style from "./index.module.scss";
+
 import { BiSearchAlt2 } from "react-icons/bi";
 import { HiBars3BottomRight } from "react-icons/hi2";
+
+import Style from "./index.module.scss";
 
 const Header = () => {
   return (

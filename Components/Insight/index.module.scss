@@ -47,13 +47,12 @@
           display: block;
         }
         &_img {
-          width: 300px;
-          height: 300px;
+          width: 30%;
           @include lg-down {
             width: 100%;
           }
           img {
-            object-fit: cover;
+            // object-fit: cover;
             border-radius: 16px;
           }
         }
@@ -207,6 +206,7 @@
       &_right {
         width: 70%;
         height: 100%;
+        z-index: -1;
         @include lg-down {
           width: 100%;
         }

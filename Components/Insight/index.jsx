@@ -10,6 +10,7 @@ import { ImArrowUpRight2 } from "react-icons/im";
 import { fadeIn, staggerContainer, textVariant2, zoomIn } from "@/utils/motion";
 import { TypingText } from "@/modules/CustomText";
 import Image from "next/image";
+import BlurredImage from "../CustomComponent/BlurredImage";
 
 const Insight = () => {
   const insightArr = [
@@ -60,11 +61,11 @@ const Insight = () => {
                 variants={zoomIn(i * 0.25, 0.75)}
                 className={Style.insight_container_list_item_img}
               >
-                <Image
+                <BlurredImage
                   src={item.img}
+                  width={400}
+                  height={200}
                   alt="the world"
-                  width={1000}
-                  height={1000}
                 />
               </motion.div>
               <div className={Style.insight_container_list_item_text}>
@@ -96,7 +97,7 @@ const Insight = () => {
               variants={zoomIn(0.3, 1)}
               className={Style.insight_container_content_left_stamp}
             >
-              <Image src={stamp.src} alt="stamp" height={200} width={200} />
+              <BlurredImage src={stamp.src} alt="stamp" height={100} width={100} />
             </div>
             <div className={Style.insight_container_content_left_detail}>
               <h2>
@@ -116,11 +117,11 @@ const Insight = () => {
             variants={fadeIn("right", "tween", 0.2, 1)}
             className={Style.insight_container_content_right}
           >
-            <Image
+            <BlurredImage
               src={world9.src}
               alt="the world"
-              width={5000}
-              height={5000}
+              width={500}
+              height={300}
             />
           </motion.div>
         </motion.div>
